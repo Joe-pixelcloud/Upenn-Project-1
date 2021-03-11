@@ -60,7 +60,7 @@ A summary of the access policies in place can be found in the table below.
 
 | Name     | Publicly Accessible | Allowed IP Addresses                           |
 |----------|---------------------|------------------------------------------------|
-| Jump Box | No                  | 10.0.0.4 10.1.0.4 10.0.0.5 10.0.0.6 10.0.0.9   |
+| Jump Box | No                  | 73.30.67.235                                   |
 | Web-1    | No                  | 10.0.0.4 10.1.0.4                              |
 | Web-2    | No                  | 10.0.0.4 10.1.0.4                              |
 | Web-3    | No                  | 10.0.0.4 10.1.0.4                              |
@@ -94,8 +94,9 @@ Filebeat
 Metricbeat
 
 These Beats allow us to collect the following information from each machine:
-- _TODO: In 1-2 sentences, explain what kind of data each beat collects, and provide 1 example of what you expect to see. E.g., `Winlogbeat` collects Windows logs, which we use to track user logon events, etc._
-Filebeat monitors log files or file locaations that you specify. Metricbeat monitors and takes system metrics and sends them to a specified output such as elastic search. 
+
+Filebeat monitors log files or file locations that you specify, you can track authentication logs. Metricbeat monitors and takes system metrics and sends them to a specified output such as elastic search. With metricbeat you would see ram usage or memory for example.
+
 
 ### Using the Playbook
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
@@ -105,7 +106,7 @@ SSH into the control node and follow the steps below:
 - Update the /etc/ansible/hosts file to include...
 - ![image](https://user-images.githubusercontent.com/80349924/110663898-e8742200-8194-11eb-8d32-84355f9c4b0b.png)
 
-- Run the playbook, and navigate to ____ to check that the installation worked as expected.
+- Run the playbook, and navigate to the elk instance and go to module status and click "check data" to check that the installation worked as expected.
 
 
 - The playbook file for installing docker on elk stack is install-elk.yml.
