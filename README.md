@@ -106,7 +106,7 @@ SSH into the control node and follow the steps below:
 - Update the /etc/ansible/hosts file to include...
 - ![image](https://user-images.githubusercontent.com/80349924/110663898-e8742200-8194-11eb-8d32-84355f9c4b0b.png)
 
-- Run the playbook, and navigate to the elk instance and go to module status and click "check data" to check that the installation worked as expected.
+- Run the playbook, and navigate to the elk instance web interface and go to module status and click "check data" to check that the installation worked as expected.
 
 
 - The playbook file for installing docker on elk stack is install-elk.yml.
