@@ -114,4 +114,4 @@ SSH into the control node and follow the steps below:
 - You open the hosts file and update tht to make ansible run on a specific machine. To specify the machine you want to install on, you go into the first part of the yml playbook and call the hosts group under the name you put in the hosts file. In filebeat for example you would call webservers from the hosts to tell the playbook to install filebeat on the webserver machines from the hosts file.
 
 - http://[your.ELKVM.IP]:5601/app/kibana
-The commands to run playbooks are ansible-playbook <playbook.yml> 
+The commands to run playbooks are ansible-playbook playbook-example.yml 
